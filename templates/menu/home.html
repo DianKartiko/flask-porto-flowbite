@@ -3,23 +3,69 @@
 <!-- Home Content -->
 {%block content%}
 <section class="w-full py-8">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-        <p
-            class="text-base text-zinc-700 font-medium leading-relaxed tracking-tight"
-        >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            provident excepturi neque magni dignissimos, itaque hic ad
-            recusandae ipsa esse, sequi delectus voluptate magnam numquam
-            necessitatibus, quod voluptates maiores animi voluptatum tempora
-            quibusdam incidunt. Voluptatem eligendi corrupti suscipit dolor
-            reprehenderit odio ratione, rem omnis similique? Maxime
-            reprehenderit, fugiat dolorem porro ut assumenda corrupti voluptatum
-            quae nihil optio, qui in voluptates odio placeat quaerat nesciunt at
-            exercitationem. Et, aut. Consequuntur harum voluptas minima ad est
-            dolores accusamus nam at, libero rem ipsa consectetur nihil
-            praesentium, enim ullam alias debitis nobis! Perferendis fugiat eos
-            libero, nam provident quasi beatae soluta quo quae!
-        </p>
-    </div>
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 md:px-8">
+    <!-- Content -->
+    <p
+      class="pb-8 text-justify text-base leading-relaxed font-medium tracking-tight text-zinc-700 dark:text-zinc-300"
+    >
+      Based in Indonesia, I harbor a deep interest in bridging the gap between
+      hardware and software. My primary focus lies in exploring the potential of
+      the
+      <strong>Internet of Things (IoT)</strong> through the efficiency and
+      absolute control offered by
+      <strong>C, C++, Rust, and Assembly.</strong> Explore my code experiments
+      on
+      <a
+        href=""
+        class="font-semibold text-zinc-900 underline decoration-indigo-500 decoration-2 underline-offset-3 dark:text-zinc-100"
+        >GitHub</a
+      >, or let's exchange professional insights on
+      <a
+        href=""
+        class="font-semibold text-zinc-900 underline decoration-indigo-500 decoration-2 underline-offset-3 dark:text-zinc-100"
+        >LinkedIn.</a
+      >
+    </p>
+
+    <!-- Content to Colaborate -->
+    <span class="text-base font-medium tracking-tight text-zinc-700"
+      ><a
+        href=""
+        class="font-semibold text-zinc-900 underline decoration-indigo-500 decoration-2 underline-offset-3 dark:text-zinc-100"
+        >Let's collaborate</a
+      >
+      to explore ideas!</span
+    >
+
+    <!-- Detail Project or Articles -->
+    <div class="flex flex-col space-y-4">
+      <h2 class="font-regular pt-8 text-lg tracking-tight text-zinc-500">
+        Top Articles
+      </h2>
+
+		<div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 items-center">
+			<!-- Kolom Gambar (Secara default mengambil 1 kolom) -->
+			<div class="relative overflow-hidden rounded-sm">
+				<img
+				src="{{url_for('static', filename='img/example.jpg')}}"
+				alt="Articles"
+				class="h-full w-full object-cover aspect-[3/2]"
+				/>
+			</div>
+
+			<!-- Kolom Konten (Pada MD mengambil 2 kolom sisa) -->
+			<div class="flex flex-col space-y-3 md:col-span-2">
+				<h2 class="text-base font-medium text-zinc-500 tracking-tight">Penetration Testing</h2>
+				<p class="text-zinc-950 font-semibold tracking-tight text-xl dark:text-zinc-50 ">
+				Nmap is absolute cinema for port scanning.
+				</p>
+				<div class="flex items-center gap-3">
+					<span class="rounded-full px-3 py-1 border-zinc-200 border text-zinc-500 font-regular">Nmap</span>
+					<span class="rounded-full px-3 py-1 border-zinc-200 border text-zinc-500 font-regular">Nmap</span>
+					<span class="rounded-full px-3 py-1 border-zinc-200 border text-zinc-500 font-regular">Nmap</span>
+				</div>
+			</div>
+		</div>
+  </div>
 </section>
 {%endblock%}

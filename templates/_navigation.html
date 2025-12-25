@@ -1,7 +1,7 @@
 <nav
     class="sticky top-0 z-50 w-full backdrop-blur-xl backdrop-saturate-150 bg-white/55 dark:bg-zinc-950/50 border border-zinc-200/50 dark:border-zinc-700/50 transition-all duration-300 rounded-sm md:rounded-full"
 >
-    <div class="mx-auto w-full max-w-5xl px-4 md:px-6">
+    <div class="mx-auto w-full max-w-4xl px-4 md:px-6">
         <div class="flex h-14 items-center justify-between lg:h-16">
             <div class="flex-shrink-0">
                 <a href="/" class="group flex items-center gap-2">
@@ -36,7 +36,7 @@
                     >
                         {{ item.label }}
                         <span
-                            class="absolute bottom-0 left-0 h-0.5 bg-zinc-950 dark:bg-white transition-all duration-300 
+                            class="absolute bottom-0 left-0 h-0.5 bg-indigo-500  transition-all duration-300 
                                      {{ 'w-full' if is_active else 'w-0 group-hover:w-full' }}"
                         >
                         </span>
@@ -48,7 +48,7 @@
             <div class="flex flex-shrink-0 items-center gap-1">
                 <button
                     id="theme-toggle"
-                    class="rounded-full p-2 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 focus:outline-none dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-white transition-colors"
+                    class="rounded-full p-2 text-zinc-600 bg-zinc-50 ring-1 ring-zinc-100 dark:ring-zinc-700 hover:text-zinc-900 focus:outline-none dark:text-zinc-400 dark:bg-zinc-800 dark:hover:text-white transition-colors duration-150 cursor-pointer"
                 >
                     <i data-lucide="sun" class="hidden h-5 w-5 dark:block"></i>
                     <i data-lucide="moon" class="block h-5 w-5 dark:hidden"></i>
